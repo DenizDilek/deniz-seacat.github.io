@@ -1,5 +1,5 @@
-import { createFactory, Enum } from "@alan404/enum";
-import { ReactNode } from "react";
+import { createFactory, type Enum } from "@alan404/enum";
+import type { ReactNode } from "react";
 
 export type BlogPost = {
     id: string;

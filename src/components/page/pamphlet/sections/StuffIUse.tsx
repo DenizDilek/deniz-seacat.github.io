@@ -1,7 +1,6 @@
-import { IconBrandAuth0, IconBrandCSharp, IconBrandCss3, IconBrandDocker, IconBrandFirefox, IconBrandGit, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNodejs, IconBrandPrisma, IconBrandVite, IconBrandVscode, TablerIcon } from "@tabler/icons-react"
+import { IconBrandAuth0, IconBrandCSharp, IconBrandCss3, IconBrandDocker, IconBrandFirefox, IconBrandGit, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNodejs, IconBrandPrisma, IconBrandVite, IconBrandVscode, IconBrandUnity, TablerIcon } from "@tabler/icons-react"
 import { Box, Divider, Group, Stack, Text, Tooltip } from "@mantine/core"
 import { IconBrandTypescript } from "@tabler/icons-react"
-import { IconBrandRust } from "@tabler/icons-react"
 import { IconBrandReact } from "@tabler/icons-react"
 import { IconBrandGithub } from "@tabler/icons-react"
 import { Localized } from "@alan404/react-localization"
@@ -28,7 +27,7 @@ export const StuffIUse = () => {
                         [IconBrandHtml5, "HTML"],
                         [IconBrandCss3, "CSS"],
                         [IconBrandJavascript, "JavaScript"],
-                        [IconBrandRust, "Rust"],
+                        [IconBrandUnity, "Unity"],
                     ]}
                 />
 

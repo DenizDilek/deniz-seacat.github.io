@@ -1,4 +1,4 @@
-import { Vec2, vec2, vec2div, vec2floor, vec2sub } from "@alan404/vec2";
+import { type Vec2, vec2, vec2div, vec2floor, vec2sub } from "@alan404/vec2";
 import { useWindowEvent } from "@mantine/hooks";
 import { useEffect, useState } from "react";
 

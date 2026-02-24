@@ -1,10 +1,10 @@
-import React, { RefObject, useEffect, useRef } from "react";
+import React, { type RefObject, useEffect, useRef } from "react";
 
 export const useScrollBottom = (deps: React.DependencyList) => {
     const ref = useRef<HTMLElement>(null);
     useEffect(() => {
-        // ref.current?.scrollTo({ top: ref.current.scrollHeight });
-        // window.scrollTo({ top: document.body.scrollHeight })
+        ref.current?.scrollTo({ top: ref.current.scrollHeight });
+        window.scrollTo({ top: document.body.scrollHeight })
     }, [ref, ...deps]);
     return ref;
 };

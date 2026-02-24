@@ -1,4 +1,4 @@
-import { IconBrandDiscord, IconBrandGithub, IconBrandMatrix, IconBrandTelegram, IconCopyCheck, IconMail } from "@tabler/icons-react";
+import { IconBrandDiscord, IconBrandGithub, IconBrandItch, IconBrandTelegram, IconCopyCheck, IconMail } from "@tabler/icons-react";
 import { ReactNode, useMemo, useState } from "react";
 import { CustomIconBrandSignal } from "../../icons/CustomIconBrandSignal";
 import { Button, CloseButton, Collapse, CopyButton, Group, Paper, Popover, Stack, Text, Tooltip } from "@mantine/core";
@@ -15,35 +15,22 @@ const contacts: Contact[] = [
 	{
 		icon: <IconBrandGithub title="" />,
 		label: "GitHub",
-		link: "https://github.com/deniz-blue",
+		link: "https://github.com/denizdilek",
 	},
 	{
 		icon: <IconBrandDiscord title="" />,
 		label: "Discord",
-		copy: "deniz.blue",
+		copy: "furuden",
 	},
 	{
 		icon: <IconMail title="" />,
 		label: "Email",
-		link: "mailto:deniz@deniz.blue",
+		link: "mailto:denizdilek.bil@gmail.com",
 	},
 	{
-		icon: <IconBrandTelegram title="" />,
-		label: "Telegram",
-		link: "https://t.me/denizdotblue",
-		gatekeep: "Telegram is good, but please consider using other platforms to contact me",
-	},
-	{
-		icon: <CustomIconBrandSignal />,
-		label: "Signal",
-		copy: "denizblue.01",
-		gatekeep: "Please prefer contacting through other platforms",
-	},
-	{
-		icon: <IconBrandMatrix title="" />,
-		label: "Matrix",
-		copy: "@deniz:catgirl.cloud",
-		gatekeep: "Please prefer contacting through other platforms",
+		icon: <IconBrandItch title="" />,
+		label: "Itch.io",
+		link: "https://denniyopi.itch.io/",
 	},
 ];
 

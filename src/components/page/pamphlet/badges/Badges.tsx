@@ -4,6 +4,7 @@ import { Divider, Flex, Group, SimpleGrid, Stack, Text } from "@mantine/core";
 import REJECT_HUMANITY from "./reject_humanity.png";
 import FUFU_BADGE from "./fufu_badge.png";
 import SKYLAR_YAMERO from "./skylar-yamero.gif";
+import BEATO from "./beato.gif";
 import "./badges.css";
 
 export const ButtonsSection = () => {
@@ -58,8 +59,7 @@ export const Badges = () => {
         <Stack gap={4}>
             <BadgesDivider label="Me" />
             <BadgesRows>
-                <Badge src="/assets/88x31v0.png" href={null} />
-                <Badge src="https://badge.les.bi/88x31/pan/trans/75-degree.svg" />
+                <Badge src={BEATO} href={null} />
                 <Badge src={REJECT_HUMANITY} href={null} />
             </BadgesRows>
             <BadgesDivider label="People I know" />

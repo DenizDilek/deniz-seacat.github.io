@@ -1,4 +1,4 @@
-import { ExecutionContext } from "./ctx";
+import { type ExecutionContext } from "./ctx";
 
 export enum FNodeType {
 	FILE = "file",

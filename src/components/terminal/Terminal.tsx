@@ -8,7 +8,7 @@ import mus_smile from "./mus_smile.ogg";
 import "./terminal-style.css";
 import { useTerminalStore } from "./store/useTerminalStore";
 import { Path } from "./util/Path";
-import { DirectoryNode, FNode, FNodeType } from "./util/fnode";
+import {type DirectoryNode,type FNode, FNodeType } from "./util/fnode";
 import { useFileSystemStore } from "./store/useFileSystemStore";
 import { useSoundEffect } from "../../stores/audio-context";
 
@@ -21,7 +21,7 @@ export const Terminal = () => {
 
 	const { play: play$mus_smile } = useSoundEffect(mus_smile);
 
-	const TerminalHistoryKey = "deniz.blue:terminal-history";
+	const TerminalHistoryKey = "denizu.dev:terminal-history";
 	const getHistory = () => JSON.parse(localStorage.getItem(TerminalHistoryKey) || "[]") as string[];
 	const updateBashHistory = () =>
 		useFileSystemStore

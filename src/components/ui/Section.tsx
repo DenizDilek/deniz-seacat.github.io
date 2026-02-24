@@ -1,4 +1,4 @@
-import { Paper, PaperProps, PolymorphicComponentProps } from "@mantine/core";
+import { Paper, type PaperProps, type PolymorphicComponentProps } from "@mantine/core";
 
 export interface SectionProps extends PolymorphicComponentProps<"div", PaperProps> {
     hoverable?: boolean;

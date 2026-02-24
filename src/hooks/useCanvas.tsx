@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from "react";
 import { useWindowEvent } from "@mantine/hooks";
-import { vec2, Vec2 } from "@alan404/vec2";
+import { vec2, type Vec2 } from "@alan404/vec2";
 import { useRafInterval } from "./useRafInterval";
 
 export type UseCanvasReturn = {

@@ -38,7 +38,7 @@ export const PamphletHeader = () => {
                 <Stack align="center" gap={0} pt={8}>
                     <MeTitle />
                     <Text c="dimmed" inline span>
-                        indie developer
+                        indie game developer
                     </Text>
                 </Stack>
             </Group>
@@ -65,7 +65,7 @@ export const MeName = () => {
 	const myBurdenIsDead = false;
     return (
         <Group gap={0} align="end" className={myBurdenIsDead ? "" : "rainbowText"}>
-            {"deniz.blue".split("").map((letter, i) => (
+            {"denizu.dev".split("").map((letter, i) => (
                 <Text
                     inherit
                     span

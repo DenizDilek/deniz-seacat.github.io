@@ -17,7 +17,7 @@ export interface ListeningToState {
 	init: () => () => void;
 };
 
-const endpoint = "https://api.listenbrainz.org/1/user/deniz.blue/playing-now";
+const endpoint = "https://api.listenbrainz.org/1/user/denizudev/playing-now";
 const socketEndpoint = "https://listenbrainz.org/";
 
 export const useListeningToStore = create<ListeningToState>()((set, get) => ({
@@ -31,7 +31,7 @@ export const useListeningToStore = create<ListeningToState>()((set, get) => ({
 
 		socket.on("connect", () => {
 			console.log("Connected to ListenBrainz socket");
-			socket.emit("json", { user: "deniz.blue" });
+			socket.emit("json", { user: "denizudev" });
 		});
 
 		socket.on("playing_now", (json: string) => {

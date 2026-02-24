@@ -1,4 +1,5 @@
-import { createTheme, DEFAULT_THEME, MantineProvider, TooltipProps } from "@mantine/core";
+import { createTheme, DEFAULT_THEME, MantineProvider} from "@mantine/core";
+import type { TooltipProps } from "@mantine/core";
 import { ModalsProvider } from "@mantine/modals";
 import { Notifications } from "@mantine/notifications";
 import { IndexPage } from ".";

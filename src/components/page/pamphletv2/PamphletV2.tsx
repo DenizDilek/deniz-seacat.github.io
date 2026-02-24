@@ -59,16 +59,6 @@ export const PamphletV2 = () => {
 								<ContactsSection />
 
 								<AboutMe />
-
-								<CustomAccordion
-									id="x:discord"
-									link="https://deniz.blue/discord-invite?id=1197520507617153064"
-									title="Discord Server"
-								>
-									<Text span inherit>
-										You can join my Discord server to talk about my or similar projects. It's not really made for general chatting, but be my guest.
-									</Text>
-								</CustomAccordion>
 							</Section>
 
 							<Section title="THEME">

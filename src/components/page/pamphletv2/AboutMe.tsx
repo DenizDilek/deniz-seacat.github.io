@@ -1,4 +1,7 @@
-import { IconBrandAuth0, IconBrandCloudflare, IconBrandCSharp, IconBrandCss3, IconBrandDocker, IconBrandFirefox, IconBrandGit, IconBrandGithub, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNodejs, IconBrandPrisma, IconBrandReact, IconBrandRust, IconBrandTypescript, IconBrandVite, IconBrandVscode, IconCircle, IconExternalLink, TablerIcon } from "@tabler/icons-react"
+import { IconBrandBlender,IconBrandItch, IconBrandCloudflare, 
+	IconBrandCSharp, IconBrandCss3, IconBrandDocker, IconBrandFirefox, IconBrandGit, 
+	IconBrandGithub, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNodejs, 
+	IconBrandSteam, IconBrandReact, IconBrandUnity, IconBrandTypescript, IconBrandVite, IconBrandVscode, IconExternalLink, TablerIcon } from "@tabler/icons-react"
 import { Anchor, Group, Image, Stack, Table, Text, Tooltip } from "@mantine/core";
 import { CustomAccordion } from "./CustomAccordion";
 import { MantineLogo } from "@mantinex/mantine-logo";
@@ -24,7 +27,7 @@ export const IconsGroup = ({
 export const TimezoneSection = () => {
 	const [time, setTime] = useState("??:??");
 
-	const timeZone = "Europe/Vilnius"; // UTC+2
+	const timeZone = "Europe/Istanbul"; // UTC+3
 
 	useEffect(() => {
 		const upd = () => {
@@ -44,7 +47,7 @@ export const TimezoneSection = () => {
 	}, []);
 
 	const relativity = useDynamic(() => {
-		const targetOffset = 120; // UTC+2 in minutes
+		const targetOffset = 180; // UTC+2 in minutes
 		const diff = (-new Date().getTimezoneOffset()) - targetOffset;
 
 		if (diff === 0) return "in the same timezone as me";
@@ -64,7 +67,7 @@ export const TimezoneSection = () => {
 
 	return (
 		<Text span inherit>
-			My timezone is <Text span inline inherit fw="bold" c="blue">UTC+2</Text> and it's currently <Text span inline inherit fw="bold" c="blue">
+			My timezone is <Text span inline inherit fw="bold" c="blue">UTC+3</Text> and it's currently <Text span inline inherit fw="bold" c="blue">
 				{time}
 			</Text> here. You are <Text inline inherit span fw="bold">
 				{relativity || "<loading>"}
@@ -82,11 +85,11 @@ export const AboutMe = () => {
 			>
 				<Stack gap="xs">
 					<Text span inherit>
-						Hi, I'm 🌊 <Tooltip label="Turkish word for 'Sea', be creative, do puns!">
+						Hi, I'm 🌊 <Tooltip label="Turkish word for 'Sea'.">
 							<Text span inline inherit c="blue" fw="bold">Deniz</Text>
 						</Tooltip>! I'm a <Text span inline inherit fw="bold">
-							🖥️🐈‍⬛ software developer
-						</Text> who likes coding <Text span inline inherit ff="Arial" fw="bold" className="rainbowText">:3</Text>
+							🖥️🎮 game developer
+						</Text> who likes coding, music production, drawing and writing <Text span inline inherit ff="Arial" fw="bold" className="rainbowText">:3</Text>
 					</Text>
 
 					<TimezoneSection />
@@ -96,45 +99,29 @@ export const AboutMe = () => {
 							🇬🇧 English
 						</Text> and <Text span inline inherit fw="bold">
 							🇹🇷 Turkish
-						</Text>, and I'm learning <Text span inline inherit fw="bold">
-							🇱🇹 Lithuanian
 						</Text>.
 					</Text>
 
 					<Text span inherit>
-						I dont usually play games, when I do, I mostly play <Anchor
-							inherit
-							href="https://namemc.com/profile/deniz_blue"
-							target="_blank"
-							c="unset"
-							inline
+						I usually play story based video games. I love <Anchor
+						inherit
+						href="https://undertale.com/"
+						target="_blank"
+						c="unset"
+						inline
 						>
-							<Image
-								src="/assets/img/ico/minecraft.webp"
-								h="1rem"
-								w="1rem"
-								display="inline"
-								style={{ imageRendering: "auto", verticalAlign: "middle" }}
-							/> <Text span inherit inline>
-								Minecraft
-							</Text>
-						</Anchor> or <Anchor
-							inherit
-							inline
-							href="https://osu.ppy.sh/users/19238315"
-							target="_blank"
-							c="unset"
-						>
-							<Image
-								src="/assets/img/ico/osu.png"
-								h="1rem"
-								w="1rem"
-								display="inline"
-								style={{ imageRendering: "auto", verticalAlign: "middle" }}
-							/> <Text span inherit inline>
-								osu!
-							</Text>
+							Undertale  
+						</Anchor>
+						&nbsp; and &nbsp;
+						<Anchor
+						inherit
+						href="https://07th-expansion.net/"
+						target="_blank"
+						c="unset"
+						inline>
+						When they cry series
 						</Anchor>.
+						
 					</Text>
 				</Stack>
 			</CustomAccordion>
@@ -148,9 +135,9 @@ export const AboutMe = () => {
 							data={[
 								[IconBrandTypescript, "TypeScript"],
 								[IconBrandReact, "React"],
-								[IconBrandRust, "Rust"],
+								[IconBrandBlender, "Blender"],
 								[IconBrandCSharp, ".NET 5-8"],
-								[IconCircle, "Lua"],
+								[IconBrandSteam, "Steam"],
 								[IconBrandHtml5, "HTML"],
 								[IconBrandCss3, "CSS"],
 								[IconBrandJavascript, "JavaScript"],
@@ -160,8 +147,8 @@ export const AboutMe = () => {
 						<IconsGroup
 							data={[
 								[IconBrandVite, "Vite"],
-								[IconBrandMongodb, "MongoDB"],
-								[IconBrandPrisma, "Prisma ORM"],
+								[IconBrandUnity, "Unity"],
+								[IconBrandItch, "Itch"],
 								[IconBrandCloudflare, "Cloudflare"],
 								[IconBrandNodejs, "NodeJS"],
 								[IconBrandGit, "Git"],
