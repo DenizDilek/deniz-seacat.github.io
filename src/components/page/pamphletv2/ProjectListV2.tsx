@@ -1,7 +1,7 @@
 import { Stack,Flex } from "@mantine/core";
 // import { ProjectButtonSection } from "./ProjectButtonSection";
 // import { projects } from "virtual:projects";
-import SweptByTheStorm from "/public/assets/img/cards/SweptByTheStorm.png"
+import SweptByTheStorm from "./cards/SweptByTheStorm.png"
 
 export const ProjectListV2 = () => {
 	return (
