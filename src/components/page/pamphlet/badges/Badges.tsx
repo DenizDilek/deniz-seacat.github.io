@@ -1,10 +1,11 @@
 import { PropsWithChildren, ReactNode } from "react";
 import { Divider, Flex, Group, SimpleGrid, Stack, Text } from "@mantine/core";
 
-import SKYLAR_YAMERO from "./skylar-yamero.gif";
 import BEATO from "./beato.gif";
 import ZBRUSH from "./zbrush.png";
 import UNITY from "./unity.gif";
+import TETO from "./teto.gif";
+import FLSTUDIO from "./flstudio.gif";
 import "./badges.css";
 
 export const ButtonsSection = () => {
@@ -64,6 +65,9 @@ export const Badges = () => {
                 <Badge src={ZBRUSH} href="https://www.maxon.net/en/zbrush" />
                 <Badge  src="https://uwx.github.io/steam.gif" href="https://steamcommunity.com/profiles/76561198078932591/"/>
                 <Badge src={UNITY} href="https://unity.com/" />
+                <Badge src="https://gaze.systems/others/godot.gif" href="https://godotengine.org/" />
+                <Badge src="https://matdoes.dev/buttons/vscode.gif" href={null} />
+                <Badge src={FLSTUDIO} href={null} />
             </BadgesRows>
             <BadgesDivider label="People I know" />
             <BadgesRows>
@@ -72,7 +76,6 @@ export const Badges = () => {
                 <Badge src="https://kayceecat.neocities.org/buttons/kayceecat.gif" />
                 <Badge src="https://wamwoowam.co.uk/88x31.png" />
                 <Badge src="https://uwx.github.io/uwx.png" />
-                <Badge src="https://vea.st/button.png" />
                 <Flex
                     justify="center"
                     align="end"
@@ -85,8 +88,8 @@ export const Badges = () => {
                 >
                     <a
                         className="soulSelectable mantine-focus-auto"
-                        href={"https://skyrina.dev"}
-						aria-label="skyrina.dev link"
+                        href={"https://chanpotei.tumblr.com/"}
+						aria-label="chanpotei link"
                         target="_blank"
                         style={{
                             width: 88,
@@ -97,15 +100,14 @@ export const Badges = () => {
                         }}
                     >
                         <img
-                            src={SKYLAR_YAMERO}
+                            src={TETO}
 							role="presentation"
-                            width={48}
-                            height={80}
+                            width={63}
+                            height={101}
                             loading="lazy"
                         />
                     </a>
                 </Flex>
-                <Badge src="https://such.blue/res/button.png" />
                 <Badge src="https://88x31.nl/gifs/classicgaming.gif" href={null}/>
                 {/* Fun */}
                 <Badge src="/assets/img/88x31/kris-where-tf-are-we.png" href={null} />
@@ -114,7 +116,6 @@ export const Badges = () => {
                 <Badge src="/assets/img/88x31/tested-on-firefox.gif" href={null} />
                 <Badge src="https://dimden.dev/images/buttons/undertale.gif" href={null} />
                 {/* Inspired Sites */}
-                <Badge src="https://oat.zone/badges/oatzone.gif" />
                 <Badge src="https://split.pet/88x31/split.png" />
                 <Badge src="https://dimden.dev/services/images/88x31.gif" />
                 {/* Other Sites */}
@@ -123,7 +124,6 @@ export const Badges = () => {
 				<Badge src="https://88x31.nl/gifs/scottgames.gif" href="https://fnafofficial.com/" />
                 <Badge src="https://aspyn.gay/88x31.gif" />
                 <Badge src="https://88x31.nl/gifs/j04q1x.png" href={null} />
-                <Badge src="https://gaze.systems/others/godot.gif" />
                 <Badge src="https://badges.easrng.net/easrng.gif" href="https://easrng.net" />
                 <Badge src="https://zptr.cc/88x31/webring/zeroptr.png" />
                 <iframe
