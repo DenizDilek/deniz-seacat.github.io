@@ -1,7 +1,7 @@
 {
   "homepage": "https://denizu.dev/",
   "name": "denizdilek.github.io",
-  "private": true,
+  "main": "index.js",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
