@@ -1,10 +1,10 @@
 import { PropsWithChildren, ReactNode } from "react";
 import { Divider, Flex, Group, SimpleGrid, Stack, Text } from "@mantine/core";
 
-import REJECT_HUMANITY from "./reject_humanity.png";
-import FUFU_BADGE from "./fufu_badge.png";
 import SKYLAR_YAMERO from "./skylar-yamero.gif";
 import BEATO from "./beato.gif";
+import ZBRUSH from "./zbrush.png";
+import UNITY from "./unity.gif";
 import "./badges.css";
 
 export const ButtonsSection = () => {
@@ -60,7 +60,10 @@ export const Badges = () => {
             <BadgesDivider label="Me" />
             <BadgesRows>
                 <Badge src={BEATO} href={null} />
-                <Badge src={REJECT_HUMANITY} href={null} />
+                <Badge src="https://uwx.github.io/blender.gif" href="https://www.blender.org/" />
+                <Badge src={ZBRUSH} href="https://www.maxon.net/en/zbrush" />
+                <Badge  src="https://uwx.github.io/steam.gif" href="https://steamcommunity.com/profiles/76561198078932591/"/>
+                <Badge src={UNITY} href="https://unity.com/" />
             </BadgesRows>
             <BadgesDivider label="People I know" />
             <BadgesRows>
@@ -109,13 +112,13 @@ export const Badges = () => {
                 <Badge src="/assets/img/88x31/tidalwave.gif" href={null} />
                 <Badge src="/assets/img/88x31/bad-apple-optimized.gif" href={null} />
                 <Badge src="/assets/img/88x31/tested-on-firefox.gif" href={null} />
-                <Badge src="https://s.mew.gay/88x31/crouton.gif" href="https://crouton.net" />
+                <Badge src="https://dimden.dev/images/buttons/undertale.gif" href={null} />
                 {/* Inspired Sites */}
                 <Badge src="https://oat.zone/badges/oatzone.gif" />
                 <Badge src="https://split.pet/88x31/split.png" />
                 <Badge src="https://dimden.dev/services/images/88x31.gif" />
                 {/* Other Sites */}
-				<Badge src="https://yugoslavia.best/assets/blinchik.gif" />
+				
 				<Badge src="https://seirdy.one/p/b/miku.2713284928.png" />
 				<Badge src="https://88x31.nl/gifs/scottgames.gif" href="https://fnafofficial.com/" />
                 <Badge src="https://aspyn.gay/88x31.gif" />
