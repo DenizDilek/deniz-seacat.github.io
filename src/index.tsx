@@ -53,9 +53,9 @@ export const IndexPage = () => {
 			{flags.showDevice && <Device />}
 			{flags.showWD && <WingDing />}
 
-			<Box display={flags.showTerminal ? "block" : "none"} pos="absolute">
+			{/* <Box display={flags.showTerminal ? "block" : "none"} pos="absolute">
 				<Terminal />
-			</Box>
+			</Box> */}
 
 			{flags.showPamphlet && (
 				<Pamphlet layout />
