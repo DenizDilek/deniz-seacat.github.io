@@ -65,7 +65,7 @@ export const PamphletV2 = () => {
 								<BackgroundSwitcher />
 							</Section>
 
-							<Section title="PROJECTS">
+							<Section title="GAME PROJECTS">
 								<ProjectListV2 />
 							</Section>
 
