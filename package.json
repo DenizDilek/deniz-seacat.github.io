@@ -8,7 +8,7 @@
     "dev": "vite",
     "predeploy": "npm run build",
     "build": "vite build",
-    "deploy": "vite build && copy .nojekyll dist/ && gh-pages -d dist",
+    "deploy": "vite build && copyfiles -f .nojekyll dist/ && gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
