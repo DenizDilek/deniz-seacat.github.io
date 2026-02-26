@@ -58,4 +58,5 @@ export default defineConfig({
 	build: {
 		ssr: false,
 	},
+	base: '/denizdilek.github.io/'
 })
