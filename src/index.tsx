@@ -22,23 +22,23 @@ export const IndexPage = () => {
 		|| flags.showCountdown
 	);
 
-	const exit = () => {
-		if (!exitable) return;
-		setBackground({ type: "null", data: {} });
-		useAppFlagsStore.setState({
-			showTerminal: true,
+	// const exit = () => {
+	// 	if (!exitable) return;
+	// 	setBackground({ type: "null", data: {} });
+	// 	useAppFlagsStore.setState({
+	// 		showTerminal: true,
 
-			showPamphlet: false,
-			showPamphletV2: false,
-			showDevice: false,
-			showCountdown: false,
-			showWD: false,
-		})
-	};
+	// 		showPamphlet: false,
+	// 		showPamphletV2: false,
+	// 		showDevice: false,
+	// 		showCountdown: false,
+	// 		showWD: false,
+	// 	})
+	// };
 
-	useHotkeys([
-		["Ctrl+C", exit],
-	]);
+	// useHotkeys([
+	// 	["Ctrl+C", exit],
+	// ]);
 
 	useEffect(() => {
 		const d = new Date();
@@ -69,7 +69,7 @@ export const IndexPage = () => {
 				<CountdownThing />
 			)}
 
-			{exitable && (
+			{/* {exitable && (
 				<Affix position={{ top: 0, left: 0 }}>
 					<div className="terminal">
 						<pre className="terminal-content">
@@ -86,7 +86,7 @@ export const IndexPage = () => {
 						</pre>
 					</div>
 				</Affix>
-			)}
+			)} */}
 		</>
 	);
 }
